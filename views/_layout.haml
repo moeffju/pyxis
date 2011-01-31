@@ -1,0 +1,14 @@
+!!! 5
+%html
+  %head
+    %meta{:charset => 'utf-8'}
+    %title= @title
+    %link{rel: 'stylesheet', href:'/stylesheets/application.css'}
+    %link{rel: 'stylesheet', href:'/stylesheets/screen.css', :media => 'screen, projection'}
+    %link{rel: 'stylesheet', href:'/stylesheets/print.css', :media => 'print'}
+    /[if lt IE 8]
+      %link{rel: 'stylesheet', href:'/stylesheets/ie.css', :media => 'screen, projection'}
+    %script{src: '/javascripts/jquery.js'}
+    %script{src: '/javascripts/pyxis.js'}
+  %body
+    = yield
